@@ -2,15 +2,15 @@
 // Coding practical questions
 
 // 1. Write an arrow function that takes a number as an argument and decides if the number is evenly divisble by three or not. Use the test cases 15, 0, 385, -7. Expected output: "15 is divisible by three", "0 is divisible by three", "385 is not divisble by three", "-7 is not divisble by three".
+ let testNum = -7
 const divideBy3 = (num) => {
-    num = -7;
-    if(num %3 === 0) {
-    return num + " is divisible by 3"
+    if(testNum %3 === 0) {
+    return testNum + " is divisible by 3"
     } else {
-    return num + " is not divisible by 3"
+    return testNum + " is not divisible by 3"
 }
 }
-console.log(divideBy3())
+console.log(divideBy3(testNum))
 
 // 2. Create an object called helloMe. Include your firstName, lastName and TWO OTHER properties of you. Add a method to your object that will return a sentence using the object properties to describe you.
 const helloMe = {
